@@ -1,0 +1,30 @@
+Youtube:
+	https://www.youtube.com/watch?v=MLrMyKfVBAk&list=PLfT5DxbXzrVjSIdhNt_0iGmoA0f1LVkrm&index=11&t=30613s
+
+	Check the Website online:
+		https://personal-portfolio-developer.vercel.app
+	Download Assets:
+		https://drive.google.com/drive/folders/1OYvB749EgbkU8_HtCwveat5uZq6WGnONf
+
+	00:00:00 - Intro & Setup
+    00:32:38 - Hero Section
+    01:34:30 - About Section
+    02:19:54 - Experience & Education Section
+    03:18:47 - Skills Section
+    03:42:57 - Reviews Section
+    04:41:44 - Projects Section
+    05:37:34 - Pricing Plans and Contact Sections
+    06:24:53 - Q&A Section
+    07:02:05 - Navbar
+    07:49:29 - Dark Mode, Custom Loader, Deploying Website
+
+
+Libs:
+	# install framer-motion
+	npm install framer-motion
+
+
+
+Notes:
+	# create project
+	npx create-next-app@latest
