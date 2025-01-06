@@ -1,7 +1,7 @@
 import {Outfit} from "next/font/google";
 import "./globals.css";
 
-let outfit = Outfit({subsets:["latin"]});
+const outfit = Outfit({subsets:["latin"]});
 
 export const metadata = {
   title: "Anouar CHELAYFA",

@@ -12,6 +12,12 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    screens: { //  desktop-first approach
+      xl: {max: '1400px'},
+      lg: {max: '1150px'},
+      md: {max: '767px'},
+      sm: {max: '639px'}
+    }
   },
   plugins: [],
 };
