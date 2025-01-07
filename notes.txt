@@ -31,3 +31,10 @@ Libs:
 Notes:
 	# create project
 	npx create-next-app@latest
+
+	- create About Section
+		+ use of requestAnimationFrame() to optimize UX:
+			* requestAnimationFrame ensures the function is called before the next repaint, synchronizing the animation with the browser’s refresh rate.
+			* It's more efficient than setTimeout because:
+			* It avoids unnecessary calls when the browser is idle or the tab is not visible.
+			* It uses a consistent interval (usually 16.67ms for a 60fps refresh rate)
