@@ -62,9 +62,7 @@ const Achievements = ({ title, amount, children }) => {
       const progress = Math.min(elapsed / duration, 1); // Calculate progress (clamped to 1)
       current = Math.round(progress * target); // Increment number based on progress
       number.set(current); // Update the motion value
-      console.log("current", current);
       if (progress < 1) {
-        console.log("progress", progress);
         requestAnimationFrame(updateCount); // Continue animation
       }
     };
