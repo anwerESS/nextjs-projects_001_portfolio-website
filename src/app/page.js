@@ -7,6 +7,7 @@ import Reviews from "@/components/Reviews";
 import Projects from "@/components/Projects";
 import PricingPlans from "@/components/PricingPlans";
 import Contact from "@/components/Contact";
+import Questions from "@/components/Questions";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Reviews />
       <PricingPlans />
       <Contact />
+      <Questions />
     </div>
   );
 }
