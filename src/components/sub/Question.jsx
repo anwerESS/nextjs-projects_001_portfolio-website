@@ -29,7 +29,7 @@ const Question = ({ data, index }) => {
     >
       <h1
         onClick={() => setShow(!show)}
-        className={`flex items-center border-b text-xl font-extralight  text-gray-800 hover:text-yellow-600 cursor-pointer ${show && "border-b text-yellow-600"}`}
+        className={`flex items-center border-b text-xl font-extralight  text-gray-800 hover:text-yellow-600 cursor-pointer dark:text-white dark:hover:bg-zinc-700 dark:hover:text-yellow-600 ${show && "border-b text-yellow-600"}`}
       >
         <motion.span animate={{ rotate: show ? 0 : -90 }}>
           {QuestionArrow}
@@ -49,7 +49,7 @@ const Question = ({ data, index }) => {
           stiffness: show ? 250 : 50,
           opacity: { delay: show ? 0.2 : 0 },
         }}
-        className="box-border origin-top pl-8 text-lg font-extralight tracking-wide first-letter:pl-3"
+        className="box-border origin-top pl-8 text-lg font-extralight tracking-wide first-letter:pl-3 dark:text-gray-300"
       >
         {data.answer}
       </motion.p>

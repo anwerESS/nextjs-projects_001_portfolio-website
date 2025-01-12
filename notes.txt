@@ -26,6 +26,10 @@ Libs:
 	# install remixicon-react
 	npm install remixicon-react
 
+	# install reactjs-localstorage
+	npm install reactjs-localstorage
+
+
 
 
 Notes:

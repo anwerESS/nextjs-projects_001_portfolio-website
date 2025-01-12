@@ -11,6 +11,8 @@ import Questions from "@/components/Questions";
 import Navbar from "@/components/Navbar";
 import { useEffect, useRef, useState } from "react";
 import { navigate } from "next/dist/client/components/segment-cache/navigation";
+import Toggle from "@/components/sub/Toggle";
+import Load from "@/components/sub/Load";
 
 export default function Home() {
   const [id, setId] = useState(0);
@@ -50,18 +52,21 @@ export default function Home() {
 
   return (
     <>
-      <Navbar id={id} />
-      <div ref={compsRef}>
-        <Hero />
-        <About />
-        <Experience />
-        <Skills />
-        <Reviews />
-        <Projects />
-        <PricingPlans />
-        <Contact />
-        <Questions />
-      </div>
+      <Toggle>
+        <Load />
+        <Navbar id={id} />
+        <div className="w-min" ref={compsRef}>
+          <Hero />
+          <About />
+          <Experience />
+          <Skills />
+          <Reviews />
+          <Projects />
+          <PricingPlans />
+          <Contact />
+          <Questions />
+        </div>
+      </Toggle>
     </>
   );
 }

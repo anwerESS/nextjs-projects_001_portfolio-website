@@ -55,7 +55,12 @@ const Hero = () => {
       // onMouseLeave={() => setMouseMove(false)}
     >
       <div>
-        <div className="fley flex-col items-center justify-center gap-y-3 font-light capitalize">
+        <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="flex flex-col items-center justify-center gap-y-3 font-light capitalize"
+        >
           {/* The motion.div allows you to animate CSS properties such as rotateX and rotateY, which are dynamically calculated in the code. These properties are applied to the motion.div's style attribute, making the tilting effect possible.*/}
           <motion.div
             className="flex items-center justify-center"
@@ -87,15 +92,20 @@ const Hero = () => {
               Hi
             </motion.span>
           </motion.div>
-          <h1 className="text-center text-3xl font-bold tracking-wider text-gray-500 sm:text-2xl">
+          <h1 className="text-center text-3xl font-bold tracking-wider text-gray-500 sm:text-2xl dark:text-white transition-colors">
             {" "}
             My Name is Anouar CHELAYFA
           </h1>
-          <p className="text-lg tracking-wider text-gray-700">
+          <p className="text-lg tracking-wider text-gray-700 dark:text-gray-200 trcol²">
             I like animations 😊
           </p>
-        </div>
-        <div className="mt-8 flex justify-center gap-10 text-yellow-600">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="mt-8 flex justify-center gap-10 text-yellow-600"
+        >
           {heroIcons.map((icon, i) => (
             <a
               href="#"
@@ -105,15 +115,18 @@ const Hero = () => {
               {icon}
             </a>
           ))}
-        </div>
-        <a
+        </motion.div>
+        <motion.a
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.7 }}
           href="#"
           className="mx-auto mt-7 block w-max rounded-lg bg-red-400 px-3 py-1 font-light capitalize racking-wider text-white hover:bg-red-500 transition-colors"
           onMouseEnter={() => setButtonHover(true)}
           onMouseLeave={() => setButtonHover(false)}
         >
           Talk to me
-        </a>
+        </motion.a>
       </div>
     </div>
   );

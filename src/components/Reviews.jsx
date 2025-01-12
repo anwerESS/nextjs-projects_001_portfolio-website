@@ -44,7 +44,7 @@ const Reviews = () => {
   }, [index]);
 
   return (
-    <div id="reviews" className="my-20 px-96">
+    <div id="reviews" className="my-20">
       <Heading text={"Reviews"} />
       <div className="flex flex-col items-center justify-center">
         <motion.div
@@ -58,7 +58,7 @@ const Reviews = () => {
             <motion.div
               initial={{ x: "100%" }}
               key={i}
-              className="absolute inset-0 flex flex-col items-center justify-center gap-y-7 lg:py-4 border border-yellow-400 bg-zinc-50 p-14 lg:p-5 rounded-xl"
+              className="absolute inset-0 flex flex-col items-center justify-center gap-y-7 lg:py-4 border border-yellow-400 bg-zinc-50 p-14 lg:p-5 rounded-xl dark:bg-zinc-700 transition-colors"
               // ref={(el) => slides.current.push(el)} // BAD: pushing el into an array on every render, may cause issues because slides.current will grow infinitely with duplicate element
               ref={(el) => setSlideRef(el, i)}
             >
@@ -72,7 +72,7 @@ const Reviews = () => {
               <h1 className="text-2xl md:text-xl text-center tracking-wider text-yellow-600">
                 {review.name}
               </h1>
-              <p className="text-lg md:text-sm text-justify font-extralight tracking-wide text-gray-600 first-letter:pl-2">
+              <p className="text-lg md:text-sm text-justify font-extralight tracking-wide text-gray-600 first-letter:pl-2 dark:text-white transition-colors">
                 {review.comment}
               </p>
               <div className="flex flex-col items-center justify-center gap-y-2">

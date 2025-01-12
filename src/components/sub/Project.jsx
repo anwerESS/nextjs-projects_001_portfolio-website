@@ -27,12 +27,12 @@ const Project = ({ data, index }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: show ? 1 : 0 }}
         // transition={{ duration: 1 }} // the deault duration is 1
-        className="absolute top-0 w-full h-full flex flex-col justify-center items-center gap-y-2 bg-white/95 p-6 rounded-lg"
+        className="absolute top-0 w-full h-full flex flex-col justify-center items-center gap-y-2 bg-white/95 p-6 rounded-lg dark:bg-zinc-700/95 transition-colors"
       >
-        <h2 className="text-lg font-bold tracking-wider text-gray-500">
+        <h2 className="text-lg font-bold tracking-wider text-gray-500 dark:text-xl transition-colors">
           {data.name}
         </h2>
-        <p className="text-justify text-gray-500 first-letter:pl-2">
+        <p className="text-justify text-gray-500 first-letter:pl-2 dark:text-gray-100 transition-colors">
           {data.desc}
         </p>
       </motion.div>
