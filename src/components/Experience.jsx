@@ -35,7 +35,7 @@ const Experience = () => {
       />
       <div
         ref={containerRef}
-        className="w-full h-full flex flex-col items-center justify-center gap-y-10 lg:gap-y-20 py-10"
+        className=" relative h-full flex flex-col items-center justify-center gap-y-10 lg:gap-y-20 py-10"
       >
         {experienceData.map((data, i) => (
           <div
@@ -56,7 +56,7 @@ const Experience = () => {
                 stiffness: 50,
                 damping: 1,
               }}
-              className=" relative flex flex-col gap-y-3 rounded-md border border-red-300 bg-white p-4 tracking-wide sm:text-sm dark:bg-zinc-700 transition-colors"
+              className=" relative flex flex-col gap-y-3 rounded-md border border-red-300 bg-white p-4 tracking-wide sm:text-sm dark:bg-zinc-700 transition-colors z-20"
             >
               <h1 className="text-xl sm:text-lg font-light dark:text-white">
                 {data.title}
@@ -78,7 +78,7 @@ const Experience = () => {
                 </ul>
               </div>
               <span
-                className={`absolute top-20 text-red-300 -translate-y-1/2 ${
+                className={`absolute top-20 text-red-300 -translate-y-1/2 lg:hidden${
                   i % 2 === 0 ? "left-full rotate-180" : "right-full"
                 }`}
               >
